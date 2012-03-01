@@ -62,10 +62,10 @@ module Ckeditor
   # Get the image class from the image reference object.
   def self.image_model
     if self.class_variables.include?('@@image_model_ref')
-      @@image_model_ref.get
+      @@image_model_ref
     else
       self.file_manager_image_model = "Ckeditor::Picture"
-      @@image_model_ref.get
+      @@image_model_ref
     end
   end
 
@@ -77,10 +77,10 @@ module Ckeditor
   # Get the file class from the file reference object.
   def self.file_model
     if self.class_variable_defined?('@@file_model_ref')
-      @@file_model_ref.get
+      @@file_model_ref
     else
       self.file_manager_file_model = "Ckeditor::AttachmentFile"
-      @@file_model_ref.get
+      @@file_model_ref
     end
   end
 
