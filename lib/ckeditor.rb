@@ -71,7 +71,7 @@ module Ckeditor
 
   # Set the image model reference object to access the images.
   def self.file_manager_image_model=(class_name)
-    @@image_model_ref = ActiveSupport::Dependencies.ref(class_name)
+    @@image_model_ref = ActiveSupport::Dependencies.constantize(class_name)
   end
 
   # Get the file class from the file reference object.
@@ -86,7 +86,7 @@ module Ckeditor
 
   # Set the file model reference object to access the files.
   def self.file_manager_file_model=(class_name)
-    @@file_model_ref = ActiveSupport::Dependencies.ref(class_name)
+    @@file_model_ref = ActiveSupport::Dependencies.constantize(class_name)
   end
 
   # Default way to setup Ckeditor. Run rails generate ckeditor to create
