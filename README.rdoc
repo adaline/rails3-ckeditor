@@ -1,4 +1,4 @@
-= Rails CKEditor integration plugin with SWFUpload support
+= Rails 3 CKEditor integration plugin with SWFUpload support
 
 CKEditor is a text editor to be used inside web pages. It's a WYSIWYG editor, which means that the text being edited on it looks as similar as possible to 
 the results users have when publishing it. It brings to the web common editing features found on desktop editing applications like Microsoft Word and OpenOffice.
@@ -12,22 +12,13 @@ SWFUpload version: 2.2.0.1 Core (http://swfupload.org)
 
 Rails version: 3.x
 
-Demo appication (Rails 2.3.8):
-http://github.com/galetahub/rails-ckeditor-demo-app
-
-Demo appication (Rails 3.x):
-http://github.com/galetahub/ckeditor-demo-app
-
 == Install
 
 === Rails 3
 
 In your appication "Gemfile":
 
-  gem 'ckeditor'
-  
-or
-  gem 'ckeditor', :git => 'git://github.com/galetahub/rails-ckeditor.git', :branch => 'rails3'
+  gem 'ckeditor', :git => 'git://github.com/adaline/rails3-ckeditor.git'
 
 Next step is download ckeditor core files and generate configuration file
 Check "config/initializers/ckeditor.rb" for more configuration options:

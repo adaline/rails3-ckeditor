@@ -1,7 +1,7 @@
 # encoding: utf-8
 require 'rake'
 require 'rake/testtask'
-require 'rake/rdoctask'
+require 'rdoc/task'
 require File.join(File.dirname(__FILE__), 'lib', 'ckeditor', 'version')
 
 desc 'Default: run unit tests.'

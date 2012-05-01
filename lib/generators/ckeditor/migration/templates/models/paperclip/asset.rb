@@ -68,7 +68,7 @@ class Ckeditor::Asset < ActiveRecord::Base
   end
   
   def geometry
-    @geometry ||= Paperclip::Geometry.from_file(data.to_file)
+    @geometry ||= Paperclip::Geometry.from_file(data.queued_for_write[:original].path)
     @geometry
   end
   
